@@ -1,0 +1,39 @@
+Datos de Python Anywhere:
+/home/florcodo1/mysite/flask_app.py
+/home/florcodo1/static/imagenes
+
+Database host address:florcodo1.mysql.pythonanywhere-services.com
+Username:florcodo1
+florcodo1$miapp
+
+
+/home/FlorCodo/mysite/flask_app.py
+/home/FlorCodo/mysite/static/imagenes/
+Database host address:FlorCodo.mysql.pythonanywhere-services.com
+Username:FlorCodo
+Nombre de la base de datos: FlorCodo$miapp
+
+1. Modificar en el archivo .py:
+antes:
+catalogo = Catalogo(host="localhost", user="root", password="root-123456", database="miapp")
+
+ahora:
+catalogo = Catalogo(host='FlorCodo.mysql.pythonanywhere-services.com', user='FlorCodo', password='root-123456', database='FlorCodo$miapp')
+
+# Carpeta para guardar las imagenes
+#ruta_destino = './static/imagenes/'   #antes
+ruta_destino = '/home/FlorCodo/mysite/static/imagenes/'   #recordar poner / después de imágenes
+
+
+2. Modificar la URL en todos los archivos HTML excepto index:
+const URL = "https://FlorCodo.pythonanywhere.com/"
+altas.html en la línea 49
+listado.html en la línea 44
+listadoEliminar.html en la línea 42
+modificaciones.html en la línea 66
+
+y la ruta a las imagenes:
+https://www.pythonanywhere.com/user/FlorCodo/files/home/FlorCodo/mysite/static/imagenes/
+
+modificaciones.html en la línea 124
+listado.html en la línea 76
