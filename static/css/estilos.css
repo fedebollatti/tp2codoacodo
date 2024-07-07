@@ -9,7 +9,10 @@ body {
     background-image: url(/static/img/fondo.jpg);
     background-size: cover;
 }
-
+.stock {
+    width: 35px;
+    height: 35px;
+}
 .contenedor-centrado {
     display:flex;
     width: 100%;
