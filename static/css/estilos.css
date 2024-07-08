@@ -21,8 +21,9 @@ body {
 .public{
     display: flex;
     flex-direction: column;
-    margin-top: -20%;
-    margin-left: 30px;
+    margin-bottom: 20px;
+    margin-left: 41%;
+    row-gap: 8px;
 }
 .contenedor-centrado {
     display:flex;
