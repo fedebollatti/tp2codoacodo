@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url(/home/fedebollatti/mysite/static/imagenes/fondo.jpg);
+    background-image: url(https://www.pythonanywhere.com/user/fedebollatti/files/home/fedebollatti/mysite/static/imagenes);
     background-size: cover;
 }
 .stock {
