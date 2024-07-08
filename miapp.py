@@ -59,6 +59,7 @@ class Catalogo:
 
     def consultar_producto(self, codigo):
         self.cursor.execute(f"SELECT * FROM productos WHERE codigo = {codigo}")
+        print(self.cursor.fetchone())
         return self.cursor.fetchone()
 
     def modificar_producto(self, codigo, nueva_descripcion, nueva_cantidad, nuevo_precio, nueva_imagen, nuevo_proveedor):
